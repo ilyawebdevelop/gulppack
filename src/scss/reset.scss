@@ -48,6 +48,14 @@ input[type=range]::-ms-track {
   border-color: transparent;
   color: transparent;
 }
+button, input, select, textarea {
+  font: inherit;
+  outline: 0;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  color: inherit;
+}
 ul[class] {
   list-style: none;
 }

@@ -72,6 +72,18 @@ a {
   list-style: none;
   text-decoration: none; 
   color: inherit;
+  transition: opacity 0.2s linear;
+  &:hover {
+    color: inherit;
+    opacity: 0.85;
+  }
+}
+button {
+  transition: opacity 0.2s linear;
+  &:hover {
+    color: inherit;
+    opacity: 0.85;
+  }
 }
 input,
 button,
@@ -82,7 +94,9 @@ select {
   border: none;
   background-color: transparent;
 }
-
+.btn-check:focus + .btn, .btn:focus {
+  box-shadow: none;
+}
 a{
   text-decoration: none;
 }

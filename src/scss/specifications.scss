@@ -8,9 +8,25 @@ body {
   line-height: 1;
   color: $main-color;
   font-family: $font-family;
-  font-size: 1rem;
-  font-weight: $medium;
-  background-color: $main-color;
+  font-size: 18px;
+  font-weight: $regular;  
+}
+body.hidden {
+  overflow: hidden
+}
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media (max-width: 991px){
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+.section-title {
+  margin-bottom: 45px;
+	@media (max-width: 991px){     
+		margin-bottom: 30px;
+	}
 }
 .wrapper {
 	display: flex;
@@ -23,24 +39,27 @@ body {
 .footer {
 	flex: 0 0 auto;
 }
-.container{
-  padding: 0 var(--container-offset);
-  max-width: var(--container-width);  
-  margin: 0 auto;  
+.container {
+  @media (max-width: 575px){
+    padding: 0 20px;
+  }
 }
-.container-lg {
-  margin: 0 auto;
-  padding: 0 var(--container-offset);
-  max-width: var(--container-fluid-width);
-}
+// .container{
+//   padding: 0 var(--container-offset);
+//   max-width: var(--container-width);  
+//   margin: 0 auto;  
+// }
+// .container-lg {
+//   margin: 0 auto;
+//   padding: 0 var(--container-offset);
+//   max-width: var(--container-fluid-width);
+// }
+
 h1, h2, h3, h4, h5, h6 {
   text-transform: uppercase;
   font-family: $font-family;
   font-weight: $bold;
   color: $main-color;
-}
-.section-title {
-  margin-bottom: 45px;
 }
 
 
